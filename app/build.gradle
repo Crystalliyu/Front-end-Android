@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -58,6 +59,12 @@ dependencies {
     implementation "androidx.preference:preference:$preference_version"
 
     //Use firebase to add afs
-    implementation 'com.google.firebase:firebase-ads:19.0.0'
+    implementation 'com.google.firebase:firebase-ads:19.3.0'
+
+    // add SDKs for desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+    implementation 'com.google.firebase:firebase-messaging:20.2.3'
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+
 
 }
